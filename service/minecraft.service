@@ -1,0 +1,16 @@
+[Unit]
+Description=The Minecraft Server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+User=systemd-minecraft
+WorkingDirectory=/opt/minecraft
+
+ExecStart=/usr/bin/java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+SuccessExitStatus=0
+Restart=on-failure
+StartLimitBurst=0
+
+[Install]
+WantedBy=multi-user.target
