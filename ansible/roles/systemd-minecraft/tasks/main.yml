@@ -1,0 +1,18 @@
+---
+
+- name: Install sohre.repo
+  copy:
+    src: sohre.repo
+    dest: /etc/yum.repos.d/sohre.repo
+
+- name: Install systemd-minecraft
+  yum:
+    name: systemd-minecraft-{{ systemd_minecraft }}
+    state: present
+
+- name: Run the systemd-minecraft service
+  service:
+    name: minecraft
+    state: started
+    enabled: true
+

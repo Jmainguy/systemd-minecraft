@@ -1,0 +1,6 @@
+[sohre]
+name=Sohre packages for el7
+baseurl=https://pulp.soh.re/pulp/repos/sohre/el7
+failovermethod=priority
+enabled=1
+gpgcheck=0

@@ -1,0 +1,7 @@
+---
+
+- name: Install minecraft service
+  gather_facts: false
+  hosts: all
+  roles:
+    - systemd-minecraft
