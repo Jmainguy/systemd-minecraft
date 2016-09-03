@@ -1,15 +1,15 @@
 # systemd-minecraft
 This is a way to run and deploy minecraft on a systemd server
 ## How-to build rpm
-1. git clone
+git clone
 ```bash
 git clone https://github.com/Jmainguy/systemd-minecraft
 ```
-2. Take a tar.gz of this entire dir
+Take a tar.gz of this entire dir
 ```bash
 tar czvf systemd-minecraft.tar.gz systemd-minecraft/*
 ```
-3. Copy .tar.gz and .spec to rpmbuild/SOURCE and rpmbuild/SPEC and run rpmbuild
+Copy .tar.gz and .spec to rpmbuild/SOURCE and rpmbuild/SPEC and run rpmbuild
 
 ## How-to deploy rpm
 1. Upload new rpm to pulp
@@ -19,4 +19,3 @@ tar czvf systemd-minecraft.tar.gz systemd-minecraft/*
 ```bash
 ansible-playbook -i hosts site.yml
 ```
-5. Profit
