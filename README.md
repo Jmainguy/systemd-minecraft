@@ -5,6 +5,8 @@ git clone
 ```bash
 git clone https://github.com/Jmainguy/systemd-minecraft
 ```
+Download minecraft_server.jar into systemd-minecraft directory, and rename minecraft_server.jar
+
 Take a tar.gz of this entire dir
 ```bash
 tar czvf systemd-minecraft.tar.gz systemd-minecraft/*
